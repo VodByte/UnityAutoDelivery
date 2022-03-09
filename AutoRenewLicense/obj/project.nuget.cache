@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "XUsneSexXxwIFk60aBdzc5Mq+LVFeyGX1rULje978tgzKIpFNm+Djv1pVDGY2P2S6OHOsCW0Nlm4O9l1TzPVbQ==",
+  "success": true,
+  "projectFilePath": "D:\\GitProject\\AutoBuilder\\AutoRenewLicense\\AutoRenewLicense.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\GuoLi\\.nuget\\packages\\macross.json.extensions\\2.2.0\\macross.json.extensions.2.2.0.nupkg.sha512",
+    "C:\\Users\\GuoLi\\.nuget\\packages\\microsoft.playwright\\1.19.1\\microsoft.playwright.1.19.1.nupkg.sha512",
+    "C:\\Users\\GuoLi\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\GuoLi\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\GuoLi\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\GuoLi\\.nuget\\packages\\system.text.json\\6.0.1\\system.text.json.6.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -59,27 +59,5 @@ namespace Builder.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to using UnityEditor;
-        ///
-        ///class %className% : Mono
-        ///{
-        ///    static void BuildWin64()
-        ///    {
-        ///        string[] scenes = { %sceneFiles% };
-        ///        string pathToDeploy = %outputPath%
-        ///        BuildPipeline.BuildPlayer(scenes,
-        ///							      pathToDeploy,
-        ///								  BuildTarget.StandaloneWindows64,
-        ///                                  BuildOptions.None);      
-        ///    }
-        ///}.
-        /// </summary>
-        internal static string templetBuildScript {
-            get {
-                return ResourceManager.GetString("templetBuildScript", resourceCulture);
-            }
-        }
     }
 }

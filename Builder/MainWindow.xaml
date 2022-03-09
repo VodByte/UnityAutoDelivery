@@ -4,8 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Builder"
-        mc:Ignorable="d" MinHeight="720" MinWidth="710"
-        Title="Builder" Height="720" Width="710">
+        mc:Ignorable="d" MinHeight="620" MinWidth="710"
+        Title="Builder" Height="620" Width="710">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -85,15 +85,6 @@
                 <Button Grid.Row="3" Grid.Column="1"
                         Name="btnSelectProjDir"
                         Click="BtnSelectProjPath_Click"/>
-
-                <Label Grid.Row="4" Grid.Column="0"
-                       Content="场景文件"/>
-                <ListBox ItemsSource="{Binding Path=UnitySceneFiles}"
-                         Name="lbxSceneFiles"
-                         Grid.Row="4" Grid.RowSpan="2" Grid.Column="2"/>
-                <Button Content="选择"
-                        Name="btnSelectUnityScenes"
-                        Grid.Column="2" Grid.Row="6" Click="BtnSelectUnityScenes_Click"/>
 
                 <!--输出路径-->
                 <Label Content="输出路径"

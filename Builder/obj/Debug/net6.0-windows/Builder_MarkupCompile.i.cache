@@ -4,12 +4,12 @@
 winexe
 C#
 .cs
-G:\GitProject\Utility\AutoBuilder\Builder\Builder\obj\Debug\net6.0-windows\
+D:\GitProject\AutoBuilder\Builder\obj\Debug\net6.0-windows\
 Builder
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-G:\GitProject\Utility\AutoBuilder\Builder\Builder\App.xaml
+D:\GitProject\AutoBuilder\Builder\App.xaml
 11407045341
 
 71177304101

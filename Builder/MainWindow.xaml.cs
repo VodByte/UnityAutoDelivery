@@ -290,24 +290,6 @@ namespace Builder
             return output + $@"\{ProjectName}.exe";
         }
 
-        ///<summary> 生成脚本文件 </summary>
-        private (string className, string content) GenerateScriptFile(string _suffix)
-        {
-            string className = $"A{GetRanomdString(10)}";
-
-            /// 创建构建脚本
-            List<string> tempScenes = new();
-            foreach (var scene in UnitySceneFiles)
-            {
-                tempScenes.Add($"@\"{scene}\"");
-            }
-            string script = Properties.Resources.templetBuildScript;
-            script = script.Replace("%sceneFiles%", string.Join(",", tempScenes))
-                           .Replace("%outputPath%", $"@\"{PrepareOutputDest(_suffix)}\";")
-                           .Replace("%className%", className);
-            return (className, script);
-        }
-
         private void BuildWin64()
         {
             /// 如果不构建到子文件夹，先清除残留的上次构建文件
@@ -344,14 +326,11 @@ namespace Builder
                 }
             }
 
-            var (className, content) = GenerateScriptFile("Win64");
-            File.WriteAllText(PrepareScriptFileDest(), content);
-
             Logout("构建开始");
             string cmd = $@"/c ""{UnityExePath}"" -quit "
                             + $"-batchmode "
                             + $"-projectPath {UnityProjPath} "
-                            + $"-executeMethod {className}.BuildWin64 ";
+                            + $"-buildWindows64Player {UnityOutputPath}\\{ProjectName}.exe";
 
             var info = new ProcessStartInfo()
             {
